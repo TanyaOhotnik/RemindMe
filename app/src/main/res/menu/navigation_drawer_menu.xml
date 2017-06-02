@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nd_remainders"
+          android:title="@string/nd_reminders"
+          android:icon="@drawable/magnify"/>
+    <item android:id="@+id/nd_favourites"
+          android:title="@string/nd_favourites"
+          android:icon="@drawable/magnify"/>
+    <item android:id="@+id/nd_archive"
+          android:title="@string/nd_archive"
+          android:icon="@drawable/magnify"/>
+    <item android:id="@+id/nd_settings"
+          android:title="@string/nd_settings"
+          android:icon="@drawable/magnify"/>
+    <item android:id="@+id/nd_info"
+          android:title="@string/nd_info"
+          android:icon="@drawable/magnify"/>
+
+
+</menu>
