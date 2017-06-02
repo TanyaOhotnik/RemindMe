@@ -9,5 +9,9 @@
     <string name="nd_settings">Настройки</string>
     <string name="nd_info">Справка</string>
 
+    <!--drawerLayout-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 
 </resources>
