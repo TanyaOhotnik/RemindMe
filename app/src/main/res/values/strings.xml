@@ -13,5 +13,12 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
 
+    <!--Tabs names-->
+    <string name="tab_history">History</string>
+    <string name="tab_ideas">Ideas</string>
+    <string name="tab_todo">Todo</string>
+    <string name="tab_birthdays">Birthdays</string>
+
+
 
 </resources>

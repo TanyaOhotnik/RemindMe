@@ -9,10 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 
-import com.tanyaohotnik.remindme.adapter.TabPagerFragmentAdapter;
+import com.tanyaohotnik.remindme.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     private static final int LAYOUT = R.layout.activity_main;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void initTabs() {
         mViewPager = (ViewPager)findViewById(R.id.viewPager);
-        TabPagerFragmentAdapter adapter = new TabPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this,getSupportFragmentManager());
         mViewPager.setAdapter(adapter);
 
         TabLayout tabs = ( TabLayout)findViewById(R.id.tabLayout);
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void initToolbar() {
         mToolbar = (Toolbar)findViewById(R.id.toolbar);
         mToolbar.setTitle(R.string.app_name);
-        mToolbar.setTitleTextColor(getResources().getColor(R.color.colorWhite));
+//        mToolbar.setTitleTextColor(getResources().getColor(R.color.colorWhite));
         setSupportActionBar(mToolbar);
     }
 
@@ -84,6 +83,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void showNotificationTab() {
-        mViewPager.setCurrentItem(Constants.TAB_NAVIGATION);
+        mViewPager.setCurrentItem(Constants.TAB_IDEAS);
     }
 }
